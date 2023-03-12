@@ -52,7 +52,7 @@ class RegisterController extends Controller
     {
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
-            'npm' => ['required','string','max:10','unique:profile'],
+            'nis' => ['required','string','max:10','unique:profile'],
             'prodi'=> ['required','string','max:45'],
             'alamat'=> ['required','string','max:45'],
             'noTelp'=> ['required','string','max:45'],
@@ -76,7 +76,7 @@ class RegisterController extends Controller
         ]);
 
         Profile::create([
-            'npm'=>$data['npm'],
+            'nis'=>$data['nis'],
             'prodi'=>$data['prodi'],
             'alamat'=>$data['alamat'],
             'noTelp'=>$data['noTelp'],

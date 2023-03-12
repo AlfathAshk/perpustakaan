@@ -46,7 +46,7 @@ class DatabaseSeeder extends Seeder
      ]);
 
      Profile::create([
-    'npm'=>'admin',
+    'nis'=>'admin',
     'prodi'=>'admin',
     'alamat'=>'kampus',
     'noTelp'=>'admin',
@@ -54,7 +54,7 @@ class DatabaseSeeder extends Seeder
     ]);
 
      Profile::create([
-     'npm'=>'2113201044',
+     'nis'=>'2113201044',
      'prodi'=>'Teknik Informatika',
      'alamat'=>'Bandung',
      'noTelp'=>'089609760132',
@@ -62,7 +62,7 @@ class DatabaseSeeder extends Seeder
      ]);
 
      Profile::create([
-     'npm'=>'2113201040',
+     'nis'=>'2113201040',
      'prodi'=>'Tenkin Electro',
      'alamat'=>'Jakata',
      'noTelp'=>'08123975855',
@@ -70,7 +70,7 @@ class DatabaseSeeder extends Seeder
      ]);
 
      Profile::create([
-     'npm'=>'2113214013',
+     'nis'=>'2113214013',
      'prodi'=>'Sistem Informasi',
      'alamat'=>'Garut',
      'noTelp'=>'08958923134',

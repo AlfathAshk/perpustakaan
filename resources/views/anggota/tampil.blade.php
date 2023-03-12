@@ -44,7 +44,7 @@
                         <tr>
                             <th scope="col">No.</th>
                             <th scope="col">Nama Anggota</th>
-                            <th scope="col">NPM</th>
+                            <th scope="col">NIS</th>
                             <th scope="col">Email</th>
                             <th scope="col">Tombol Aksi</th>
                         </tr>
@@ -54,7 +54,7 @@
                             <tr>
                                 <th scope="row">{{ $key }}</th>
                                 <td>{{ $item->name }}</td>
-                                <td>{{ $item->profile->npm }}</td>
+                                <td>{{ $item->profile->nis }}</td>
                                 <td>{{ $item->email }}</td>
                                 <td>
 
@@ -72,7 +72,7 @@
                                             <div class="modal-dialog" role="document">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h5 class="modal-title" id="ModalLabelDelete">Ohh No!</h5>
+                                                        <h5 class="modal-title" id="ModalLabelDelete">Konfirmasi!</h5>
                                                         <button type="button" class="close" data-dismiss="modal"
                                                             aria-label="Close">
                                                             <span aria-hidden="true">&times;</span>

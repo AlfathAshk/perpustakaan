@@ -25,12 +25,12 @@
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label for="npm" class="col-md-4 col-form-label text-md-end text-dark">{{ __('NPM') }}</label>
+                            <label for="nis" class="col-md-4 col-form-label text-md-end text-dark">{{ __('NIS') }}</label>
 
                             <div class="col-md-6">
-                                <input id="npm" type="text" class="form-control @error('npm') is-invalid @enderror" name="npm" value="{{ old('npm') }}">
+                                <input id="nis" type="text" class="form-control @error('nis') is-invalid @enderror" name="nis" value="{{ old('nis') }}">
 
-                                @error('npm')
+                                @error('nis')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -115,7 +115,7 @@
                             </div>
                         </div>
                         <div class="row mb-0">
-                        <span class="col-md-8 mb-3 text-md-end text-dark">Sudah Punya Akun ? <a href="{{ route('login') }}" class="p-0">login</a></span>
+                        <span class="col-md-8 mb-3 text-md-end text-dark">Sudah Punya Akun ? <a href="{{ route('login') }}" class="p-0">Login</a></span>
                         </div>
                         <div class="row mb-0">
                             <div class="col-md-5 offset-md-4">

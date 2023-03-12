@@ -11,7 +11,7 @@ class Profile extends Model
 
     protected $table = "profile";
     protected $fillable =[
-    'npm',
+    'nis',
     'prodi',
     'alamat',
     'noTelp',

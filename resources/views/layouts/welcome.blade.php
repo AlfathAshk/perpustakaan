@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="{{asset('/img/logo.png')}}" rel="icon">
-        <title>Sistem Informasi Perpustakaan</title>
+        <title>Stematel Library</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@ of Simple CSS Waves-->
 
 <!--Content before waves-->
 <div class="inner-header flex">
-<h1>Sistem Informasi Perpustakaan</h1>
+<h1>Stematel Library</h1>
 
 @yield('content')
 </div>

@@ -27,7 +27,7 @@ class ProfileController extends Controller
     public function update(request $request, $id){
         $request->validate([
             'name'=> 'required',
-            'npm'=> 'required',
+            'nis'=> 'required',
             'prodi'=> 'required',
             'alamat'=> 'required',
             'noTelp'=> 'required',
@@ -35,7 +35,7 @@ class ProfileController extends Controller
         ],
         [
             'name.required'=>"Nama tidak boleh kosong",
-            'npm.required'=>"Nomor Induk tidak boleh kosong",
+            'nis.required'=>"Nomor Induk tidak boleh kosong",
             'prodi.required'=>"Prodi tidak boleh kosong",
             'alamat.required'=>"Alamat tidak boleh kosong",
             'noTelp.required'=>"Nomor Telepon tidak boleh kosong",
@@ -60,7 +60,7 @@ class ProfileController extends Controller
          $profile->save();
         }
         $user->name = $request->name;
-        $profile->npm = $request->npm;
+        $profile->nis = $request->nis;
         $profile->prodi = $request->prodi;
         $profile->alamat = $request->alamat;
         $profile->noTelp = $request->noTelp;

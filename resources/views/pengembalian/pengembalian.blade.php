@@ -24,7 +24,7 @@
                     <select name="users_id" id="" class="form-control">
                         <option value=""></option>
                         @forelse ($peminjam as $item)
-                                <option value="{{ $item->id }}">{{ $item->user->name}} ( {{ $item->npm }} )</option>
+                                <option value="{{ $item->id }}">{{ $item->user->name}} ( {{ $item->nis }} )</option>
                             @empty
                                 tidak ada user
                             @endforelse

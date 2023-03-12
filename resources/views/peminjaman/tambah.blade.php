@@ -25,7 +25,7 @@
                     <select name="users_id" id="" class="form-control">
                         <option value=""></option>
                         @forelse ($peminjam as $item)
-                                <option value="{{ $item->id }}">{{ $item->user->name}} ( {{ $item->npm }} )</option>
+                                <option value="{{ $item->id }}">{{ $item->user->name}} ( {{ $item->nis }} )</option>
                             @empty
                                 tidak ada user
                             @endforelse
@@ -34,7 +34,7 @@
 
                     @if(Auth::user()->isAdmin == 0)
                     <select name="users_id" id="" class="form-control">
-                        <option value="{{ $peminjam->users_id }}">{{ $peminjam->user->name }} ( {{ $peminjam->npm }} )</option>
+                        <option value="{{ $peminjam->users_id }}">{{ $peminjam->user->name }} ( {{ $peminjam->nis }} )</option>
                     </select>
                     @endif
 

@@ -11,6 +11,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\CetakLaporanController;
 use App\Http\Controllers\PengembalianController;
 use App\Http\Controllers\RiwayatPinjamController;
+use App\Http\Controllers\HomepageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,8 +25,13 @@ use App\Http\Controllers\RiwayatPinjamController;
 */
 
 Route::get('/', function () {
+    return view('layouts.homepage');
+});
+
+Route::get('/login', function () {
     return view('auth.login');
 });
+
 Auth::routes();
 
 Route::middleware(['auth'])->group(function () {

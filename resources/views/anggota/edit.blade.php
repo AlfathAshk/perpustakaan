@@ -29,10 +29,10 @@
 
             <div class="form-group mx-4 my-2">
                 <label for="nama" class="text-md text-primary font-weight-bold">Nomor Induk Masiswa</label>
-                <input type="text" name="npm" class="form-control" value="{{ old('npm', $profile->npm) }}">
+                <input type="text" name="nis" class="form-control" value="{{ old('nis', $profile->nis) }}">
             </div>
 
-            @error('npm')
+            @error('nis')
                 <div class="alert-danger"> {{ $message }}</div>
             @enderror
 

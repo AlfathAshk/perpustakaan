@@ -50,7 +50,7 @@ class AnggotaController extends Controller
     {
         $request->validate([
             'name'=> 'required',
-            'npm'=> 'required|unique:profile',
+            'nis'=> 'required|unique:profile',
             'prodi'=> 'required',
             'alamat'=> 'required',
             'noTelp'=> 'required',
@@ -59,8 +59,8 @@ class AnggotaController extends Controller
         ],
         [
             'name.required'=>"Nama tidak boleh kosong",
-            'npm.required'=>"Nomor Induk tidak boleh kosong",
-            'npm.unique'=>"NPM Telah Digunakan",
+            'nis.required'=>"Nomor Induk tidak boleh kosong",
+            'nis.unique'=>"NIS Telah Digunakan",
             'prodi.required'=>"Prodi tidak boleh kosong",
             'alamat.required'=>"Alamat tidak boleh kosong",
             'noTelp.required'=>"Nomor Telepon tidak boleh kosong",
@@ -77,7 +77,7 @@ class AnggotaController extends Controller
         ]);
 
         Profile::create([
-            'npm'=>$request['npm'],
+            'nis'=>$request['nis'],
             'prodi'=>$request['prodi'],
             'alamat'=>$request['alamat'],
             'noTelp'=>$request['noTelp'],
@@ -126,7 +126,7 @@ class AnggotaController extends Controller
     {
         $request->validate([
             'name'=> 'required',
-            'npm'=> 'required',
+            'nis'=> 'required',
             'prodi'=> 'required',
             'alamat'=> 'required',
             'noTelp'=> 'required',
@@ -134,7 +134,7 @@ class AnggotaController extends Controller
         ],
         [
             'name.required'=>"Nama tidak boleh kosong",
-            'npm.required'=>"Nomor Induk tidak boleh kosong",
+            'nis.required'=>"Nomor Induk tidak boleh kosong",
             'prodi.required'=>"Prodi tidak boleh kosong",
             'alamat.required'=>"Alamat tidak boleh kosong",
             'noTelp.required'=>"Nomor Telepon tidak boleh kosong",
@@ -158,7 +158,7 @@ class AnggotaController extends Controller
          $profile->save();
         }
         $user->name = $request->name;
-        $profile->npm = $request->npm;
+        $profile->nis = $request->nis;
         $profile->prodi = $request->prodi;
         $profile->alamat = $request->alamat;
         $profile->noTelp = $request->noTelp;

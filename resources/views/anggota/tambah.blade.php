@@ -27,11 +27,11 @@
         @enderror
 
         <div class="form-group mx-4 my-2">
-            <label for="npm" class="text-md text-primary font-weight-bold">Nomor Induk Masiswa</label>
-            <input type="text" id="npm" class="form-control @error('npm') is-invalid @enderror" name="npm" value="{{ old('npm') }}">
+            <label for="nis" class="text-md text-primary font-weight-bold">Nomor Induk Siswa</label>
+            <input type="text" id="nis" class="form-control @error('nis') is-invalid @enderror" name="nis" value="{{ old('nis') }}">
         </div>
 
-        @error('npm')
+        @error('nis')
         <div class="alert-danger"> {{ $message }}</div>
         @enderror
 
